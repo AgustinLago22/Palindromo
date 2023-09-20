@@ -29,14 +29,14 @@ def update_at(request,code):
     form = PalindromeForm(request.POST, instance=register)
     if form.is_valid() and request.POST:
         form.save()
-        return redirect('words/verificador.html')
+        return redirect('verificador.html')
 
     return render(request, 'words/update_at.html', {'form':form})
 
 def delete_at(request,code):
     word = Words.objects.get(code=code)
     word.delete()
-    return redirect('words/verificador.html')
+    return redirect('verificador.html')
 
 def bienvenido(request):
     return render(request, 'bienvenido.html')
