@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo%} Update the word to the list {% endblock %}
+
+
+{% block contenido %}
+	<div class="card">
+        <div class="card-header">
+            Change the Word
+        </div>
+        <div class="card-body">
+            {% include 'words/form.html' %}
+            
+            
+        </div>
+        <div class="card-footer text-muted">
+            
+        </div>
+    </div>
+
+{% endblock %}

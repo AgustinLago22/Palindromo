@@ -1,0 +1,19 @@
+{% extends "base.html" %} 
+{% block titulo%} Checker {% endblock %} 
+{% block contenido %}
+<div class="card">
+  <div class="card-header">Check if the word is a palindrome or not</div>
+  <div class="card-body">
+    
+    <td>{{word.descrip}} </td>
+    {% if result %}
+    <div class="jumbotron">
+      <div class="container">{{ result }}</div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="card-footer text-muted"></div>
+    <a name="" id="" class="btn btn-primary" href="{% url 'verificador' %}" role="button">Back</a>
+    </div>
+
+{% endblock %}
